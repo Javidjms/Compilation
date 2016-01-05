@@ -1,0 +1,24 @@
+//----------------------------------------------------
+// Programme correct
+//
+//------------------------------------------------------
+procedure pp is
+  procedure piston(v : in integer; i : in out integer) is
+  begin
+    i := i + v;
+    put(3)
+  end;
+  procedure p(v : in integer; i : in out integer) is
+  a :  integer;
+  begin
+    put(2);
+    piston(3, i);
+    i := i + v
+  end;
+  a : integer;
+begin
+  put(1);
+  a := 5;
+  p(2, a);
+  put(a)
+end.
